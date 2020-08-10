@@ -39,4 +39,4 @@ jobs:
       run: npm install -g surge
       
     - name: deploy
-      run: surge ./build nutty-dock.surge.sh --token {{SURGE_TOKEN}}
+      run: surge ./build nutty-dock.surge.sh --token {{secrets.SURGE_TOKEN}}
